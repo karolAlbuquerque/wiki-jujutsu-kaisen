@@ -59,6 +59,37 @@ npm run lint
 
 ---
 
+## Publicação online
+
+O sistema pode ser publicado em **Netlify** (recomendado), **Vercel**, **GitHub Pages** ou outro serviço de hospedagem de arquivos estáticos.
+
+**Sugestão de configuração no Netlify (build a partir do repositório):**
+
+| Campo | Valor |
+|-------|--------|
+| **Build command** | `npm run build` |
+| **Publish directory** | `dist` |
+
+Conecte o repositório GitHub, use Node em versão LTS compatível com o projeto e publique. O **link público** gerado (por exemplo `https://<nome>.netlify.app`) será o endereço acessível para testes de usuários e para **cadastro do site no Hotjar**, permitindo coleta de dados reais de uso para o Trabalho Final de N1 (Análise de Interface com Hotjar).
+
+---
+
+## Integração com Hotjar
+
+Este projeto também dá suporte ao **Trabalho Final de N1 — Análise de Interface com Hotjar** (UX), além da **Atividade 06** de Desenvolvimento de Software Web.
+
+- O **script oficial** do Hotjar (gerado no painel da ferramenta após criar o site e informar a URL publicada) deve ser inserido no arquivo **`index.html`**, dentro da tag **`<head>`** — há comentários de posição no HTML; **não** use códigos inventados.
+- Após publicar com o script e confirmar a instalação no painel do Hotjar, a coleta de sessões e mapas de calor fica disponível para análise.
+- Planeje testes com **pelo menos 3 usuários** diferentes, pedindo que **naveguem pela página inteira**, **rolem até o final**, **cliquem em botões e links**, **interajam com os dossiês** e **explorem a sidebar**.
+- No relatório, utilize principalmente:
+  - **mapa de cliques** (heatmaps);
+  - **mapa de rolagem** (scroll maps);
+  - comportamento de navegação e gravações de sessão (se habilitadas no plano).
+
+Enquanto o snippet real não for colado, o repositório mantém o placeholder `<!-- HOTJAR_TRACKING_CODE_AQUI -->` — substitua-o (e o comentário explicativo, se quiser) pelo bloco `<script>...</script>` fornecido pelo Hotjar.
+
+---
+
 ## Justificativa da arquitetura
 
 Pastas segregadas (**`components`**, **`data`**, **`interfaces`**, **`pages`**, **`styles`**, **`utils`**) mantêm papéis claros:
