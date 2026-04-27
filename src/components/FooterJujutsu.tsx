@@ -7,7 +7,7 @@ export interface IFooterJujutsuProps {
  */
 export function FooterJujutsu({ textoInstitucional }: IFooterJujutsuProps) {
   return (
-    <footer className="jjk-footer mt-5 border-top border-secondary">
+    <footer className="jjk-footer jjk-footer-ritual mt-5 border-top border-secondary position-relative">
       <div className="container-fluid px-3 px-lg-4 py-4">
         <p className="small text-secondary mb-3 mb-lg-4 jjk-footer-lead">{textoInstitucional}</p>
         <address className="jjk-address mb-0 not-italic">

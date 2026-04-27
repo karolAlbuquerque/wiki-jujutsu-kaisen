@@ -11,15 +11,16 @@ export interface ISidebarJujutsuProps {
  */
 export function SidebarJujutsu({ tecnicas, clas, episodios }: ISidebarJujutsuProps) {
   return (
-    <aside className="jjk-aside p-3 p-lg-4 rounded-3 h-100" aria-label="Briefing do arquivo Jujutsu">
-      <h2 className="h6 text-uppercase jjk-aside-title mb-3">Briefing encadeado</h2>
+    <aside className="jjk-aside jjk-aside-archive p-3 p-lg-4 rounded-3 h-100" aria-label="Classificação Jujutsu — arquivo lateral">
+      <h2 className="h6 text-uppercase jjk-aside-title mb-2">Classificação Jujutsu</h2>
       <p className="small text-secondary jjk-aside-intro mb-3">
-        Notas rápidas de domínio, técnicas e arcos para orientar o painel principal.
+        Extratos internos do arquivo escolar: domínios familiares, técnicas registradas e missões narrativas para
+        contextualizar os dossiês ao lado.
       </p>
 
-      <section className="mb-4" aria-labelledby="tecnicas-amaldicoadas-heading">
+      <section className="mb-4 jjk-aside-block" aria-labelledby="tecnicas-amaldicoadas-heading">
         <h3 id="tecnicas-amaldicoadas-heading" className="h6 text-warning">
-          Técnicas amaldiçoadas em destaque
+          Técnicas amaldiçoadas — índice rápido
         </h3>
         <ul className="list-unstyled small mb-0 jjk-aside-list">
           {tecnicas.map((t) => (
@@ -33,9 +34,9 @@ export function SidebarJujutsu({ tecnicas, clas, episodios }: ISidebarJujutsuPro
         </ul>
       </section>
 
-      <section className="mb-4" aria-labelledby="clas-heading">
+      <section className="mb-4 jjk-aside-block" aria-labelledby="clas-heading">
         <h3 id="clas-heading" className="h6 text-warning">
-          Clãs e linhagem
+          Linhagem — clãs em arquivo
         </h3>
         <ul className="list-unstyled small mb-0 jjk-aside-list">
           {clas.map((c) => (
@@ -48,9 +49,9 @@ export function SidebarJujutsu({ tecnicas, clas, episodios }: ISidebarJujutsuPro
         </ul>
       </section>
 
-      <section aria-labelledby="episodios-heading">
+      <section aria-labelledby="episodios-heading" className="jjk-aside-block">
         <h3 id="episodios-heading" className="h6 text-warning">
-          Arcos e missões narrativas
+          Missões em arquivo — arcos
         </h3>
         <ul className="list-unstyled small mb-0 jjk-aside-list">
           {episodios.map((e) => (

@@ -28,8 +28,8 @@ export function PaginaWikiJujutsu() {
   return (
     <div className="jjk-app min-vh-100 d-flex flex-column">
       <HeaderJujutsu
-        tituloPrincipal="Wiki Jujutsu Kaisen"
-        subtitulo="Arquivo Jujutsu em tempo real: inventário de feiticeiros, energia amaldiçoada e linhagem — registro mockado para a atividade acadêmica."
+        tituloPrincipal="Arquivo Jujutsu"
+        subtitulo="Registros de feiticeiros, maldições e técnicas amaldiçoadas — painel simulado dos arquivos secretos do Colégio Jujutsu de Tóquio (dados mockados, sem backend)."
       />
 
       <main className="flex-grow-1">
@@ -54,7 +54,7 @@ export function PaginaWikiJujutsu() {
         </div>
       </main>
 
-      <FooterJujutsu textoInstitucional="Wiki temática Jujutsu Kaisen — front-end com estado local (sem backend). Energia amaldiçoada fictícia apenas para demonstração didática." />
+      <FooterJujutsu textoInstitucional="Front-end acadêmico com estado local React — simula relatórios de campo e inventário de energia amaldiçoada sem servidor." />
     </div>
   )
 }

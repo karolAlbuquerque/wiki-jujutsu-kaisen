@@ -1,6 +1,6 @@
 # Wiki Jujutsu Kaisen
 
-Painel web acadêmico (**Atividade 06**) que simula um **arquivo vivo** da obra *Jujutsu Kaisen*: inventário de feiticeiros com situação tática atualizável e métricas derivadas em tempo real — experimento didático para **React**, **TypeScript**, **Bootstrap via CDN** e semântica HTML5.
+Painel web acadêmico (**Atividade 06**) que simula o **Arquivo Jujutsu** — ficha de feiticeiros, dossiês e “painel de energia amaldiçoada” com leituras em tempo real. A interface imita relatórios de campo, classificação e selos do Colégio Jujutsu (dados mockados). Stack: **React**, **Vite**, **TypeScript**, **Bootstrap via CDN** e **CSS externo** temático; semântica HTML5 obrigatória na atividade.
 
 ---
 
@@ -75,11 +75,11 @@ Pastas segregadas (**`components`**, **`data`**, **`interfaces`**, **`pages`**, 
 | Componente | Responsabilidade |
 |------------|------------------|
 | `PaginaWikiJujutsu` | Estado (`useState`), deriva métricas com `useMemo`, distribui callbacks. |
-| `HeaderJujutsu` | `<header>` com marca da wiki e selo tecnológico. |
-| `DashboardJujutsu` | `<section>` com contagens derivadas dos personagens no estado. |
-| `SidebarJujutsu` | `<aside>` com texto de apoio temático (mock estático). |
-| `ListaPersonagens` | `<section>` da grade responsiva que monta cards. |
-| `CardPersonagem` | Representa um feiticeiro; botões atualizam situação via callback. |
+| `HeaderJujutsu` | `<header>` estilo arquivo escolar: “Tokyo Jujutsu High Archives”, classificação e stack. |
+| `DashboardJujutsu` | `<section>` “painel de energia amaldiçoada” com contadores dinâmicos do estado. |
+| `SidebarJujutsu` | `<aside>` “classificação Jujutsu” com trechos mock de técnicas, clãs e arcos. |
+| `ListaPersonagens` | `<section>` dos dossiês; repassa índice de registro a cada ficha. |
+| `CardPersonagem` | Dossiê de feiticeiro (`Registro #…`); botões disparam `IStatusFeiticeiro` no pai. |
 | `FooterJujutsu` | `<footer>` + `<address>` acadêmico obrigatório. |
 
 ---
