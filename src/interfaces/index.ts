@@ -1,0 +1,6 @@
+export type { IStatusFeiticeiro } from './IStatusFeiticeiro'
+export type { IPersonagem } from './IPersonagem'
+export type { ITecnicaAmaldicoada } from './ITecnicaAmaldicoada'
+export type { IClã } from './IClã'
+export type { IEpisodio } from './IEpisodio'
+export type { IMetricasDashboard } from './IMetricasDashboard'

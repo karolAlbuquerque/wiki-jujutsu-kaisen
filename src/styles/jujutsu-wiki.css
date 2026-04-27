@@ -1,0 +1,260 @@
+/**
+ * Tema visual inspirado em Jujutsu Kaisen (vermelho escuro, preto, roxo, cinza).
+ * Complementa o Bootstrap carregado via CDN.
+ */
+
+.jjk-app {
+  background: radial-gradient(1200px 600px at 10% -10%, #2a1538 0%, transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, #3d0f18 0%, transparent 50%),
+    linear-gradient(180deg, #0b0b0f 0%, #121218 40%, #0e0e12 100%);
+  color: #f1f5f9;
+}
+
+.jjk-title {
+  color: #f5f0ff;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+}
+
+.jjk-subtitle {
+  max-width: 42rem;
+}
+
+.jjk-header {
+  background: rgba(10, 8, 14, 0.92);
+  backdrop-filter: blur(6px);
+}
+
+.jjk-badge-pill {
+  border: 1px solid rgba(196, 30, 58, 0.55);
+  background: rgba(43, 16, 32, 0.72);
+  color: #fff7fb;
+}
+
+.jjk-section-title,
+.jjk-aside-title {
+  color: #e8ddff;
+  letter-spacing: 0.08em;
+}
+
+.jjk-dashboard .jjk-stat-card {
+  background: rgba(22, 18, 30, 0.92);
+  border: 1px solid rgba(120, 90, 160, 0.25);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.jjk-dashboard .jjk-stat-card:hover {
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+}
+
+.jjk-dashboard-hint {
+  max-width: 28rem;
+  line-height: 1.45;
+}
+
+.jjk-stat-ativo {
+  border-color: rgba(72, 180, 120, 0.45) !important;
+}
+
+.jjk-stat-ferido {
+  border-color: rgba(220, 180, 80, 0.5) !important;
+}
+
+.jjk-stat-exorcizado {
+  border-color: rgba(200, 70, 90, 0.55) !important;
+}
+
+.jjk-stat-elite {
+  border-color: rgba(123, 104, 238, 0.45) !important;
+  background: linear-gradient(135deg, rgba(30, 20, 45, 0.95), rgba(22, 18, 30, 0.92));
+}
+
+.jjk-stat-value {
+  color: #fff;
+  font-weight: 700;
+}
+
+.jjk-aside {
+  background: rgba(16, 14, 22, 0.95);
+  border: 1px solid rgba(90, 70, 120, 0.35);
+}
+
+.jjk-aside-list li {
+  border-left: 2px solid rgba(196, 30, 58, 0.35);
+  padding-left: 0.65rem;
+}
+
+.jjk-card {
+  background: rgba(18, 16, 24, 0.95);
+  border-color: rgba(80, 70, 100, 0.4) !important;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.15s ease, border-color 0.2s ease;
+}
+
+.jjk-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35) !important;
+}
+
+.jjk-card-img {
+  min-height: 200px;
+  object-fit: cover;
+  filter: saturate(1.05) contrast(1.02);
+}
+
+.jjk-status-badge {
+  border: 1px solid rgba(200, 175, 235, 0.55);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.jjk-status-badge--ativo {
+  background: rgba(24, 96, 72, 0.82) !important;
+  border-color: rgba(140, 235, 190, 0.65);
+  color: #ffffff !important;
+}
+
+.jjk-status-badge--ferido {
+  background: rgba(130, 90, 36, 0.82) !important;
+  border-color: rgba(250, 215, 130, 0.65);
+  color: #fffbeb !important;
+}
+
+.jjk-status-badge--exorcizado {
+  background: rgba(112, 42, 58, 0.85) !important;
+  border-color: rgba(248, 160, 175, 0.55);
+  color: #ffffff !important;
+}
+
+.jjk-status-ativo {
+  box-shadow: 0 0 0 1px rgba(72, 180, 120, 0.35);
+}
+
+.jjk-status-ferido {
+  box-shadow: 0 0 0 1px rgba(220, 180, 80, 0.4);
+}
+
+.jjk-status-exorcizado {
+  box-shadow: 0 0 0 1px rgba(200, 70, 90, 0.45);
+}
+
+.jjk-elite-tag {
+  background: rgba(88, 62, 138, 0.82);
+  border: 1px solid rgba(200, 175, 255, 0.55);
+  color: #faf8ff;
+}
+
+.jjk-footer {
+  background: linear-gradient(180deg, rgba(12, 10, 18, 0.98) 0%, rgba(6, 5, 10, 1) 100%);
+  border-top-color: rgba(196, 30, 58, 0.35) !important;
+}
+
+.jjk-footer-lead {
+  border-left: 3px solid rgba(196, 30, 58, 0.45);
+  padding-left: 0.85rem;
+}
+
+.jjk-address {
+  color: #f1eef9;
+  line-height: 1.75;
+  padding: 1rem 1.15rem;
+  border-radius: 0.5rem;
+  background: rgba(28, 22, 42, 0.92);
+  border: 1px solid rgba(150, 120, 200, 0.4);
+}
+
+.jjk-address-name {
+  color: #ffffff;
+}
+
+.jjk-address-date {
+  color: #e8e0f4;
+}
+
+.jjk-address-course {
+  color: #ddd6ea;
+}
+
+.jjk-aside-intro {
+  border-bottom: 1px dashed rgba(120, 90, 160, 0.35);
+  padding-bottom: 0.65rem;
+}
+
+.jjk-btn-tatico {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Ajustes de contraste em botões Bootstrap sobre fundo escuro */
+.jjk-app .btn-outline-success {
+  color: #c8f7dc;
+  border-color: rgba(110, 215, 165, 0.85);
+}
+
+.jjk-app .btn-outline-success:hover {
+  color: #0f172a;
+  background-color: #6ee7b7;
+  border-color: #6ee7b7;
+}
+
+.jjk-app .btn-outline-warning {
+  color: #fef08a;
+  border-color: rgba(245, 200, 110, 0.9);
+}
+
+.jjk-app .btn-outline-warning:hover {
+  color: #1e1b12;
+  background-color: #fcd34d;
+  border-color: #fcd34d;
+}
+
+.jjk-app .btn-outline-danger {
+  color: #fecdd6;
+  border-color: rgba(248, 140, 160, 0.85);
+}
+
+.jjk-app .btn-outline-danger:hover {
+  color: #1a0a0e;
+  background-color: #fb7185;
+  border-color: #fb7185;
+}
+
+/*
+ * Utilitários Bootstrap (`text-secondary`, `text-muted`) são pensados para fundo claro.
+ * Sob `.jjk-app`, sobrescrevemos para cinzas mais claros e leitura garantida.
+ */
+.jjk-app .text-secondary {
+  color: #d1dae6 !important;
+}
+
+.jjk-app .text-muted {
+  color: #aebccf !important;
+}
+
+.jjk-app .text-warning {
+  color: #fde047 !important;
+}
+
+.jjk-app .jjk-card .card-title {
+  color: #f8fafc !important;
+}
+
+.jjk-app .jjk-card .card-text {
+  color: #e8eef6 !important;
+}
+
+.jjk-app .jjk-card .card-subtitle {
+  opacity: 1;
+}
+
+.jjk-app .jjk-card dt {
+  color: #f8fafc;
+}
+
+.jjk-app .jjk-aside-list strong {
+  color: #f8fafc;
+}
+
+.jjk-app .jjk-dashboard .jjk-stat-card .small.text-muted {
+  color: #aebccf !important;
+}
