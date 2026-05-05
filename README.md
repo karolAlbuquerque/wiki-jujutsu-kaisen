@@ -51,6 +51,20 @@ A divisao foi feita para manter o estado principal centralizado em `PaginaWikiJu
 - Uso semantico de `header`, `main`, `section`, `aside` e `address`.
 - Rodape com identificacao academica, data da entrega e mencao ao Prof. Fernando.
 
+## Trabalho Final de N1 - Hotjar
+
+Este mesmo projeto tambem sera utilizado para o **Trabalho Final de N1 - Analise de Interface com Hotjar**. A aplicacao esta preparada para coleta de dados reais de uso, com a tag do Hotjar inserida no `index.html`.
+
+Evidencias esperadas na entrega:
+
+- link do sistema publicado no Netlify;
+- prints dos mapas de calor do Hotjar;
+- analise de pelo menos 3 usuarios diferentes;
+- problemas de usabilidade identificados a partir dos dados;
+- melhorias propostas com justificativa baseada nos mapas de clique e rolagem.
+
+O relatorio da analise esta em `RELATORIO_HOTJAR.md`.
+
 ## Estrutura Principal
 
 ```text
