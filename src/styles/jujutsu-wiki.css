@@ -450,3 +450,32 @@
 .jjk-app .jjk-dashboard .jjk-stat-card .small.text-muted {
   color: #a8b9cf !important;
 }
+
+.jjk-app .form-control,
+.jjk-app .form-select,
+.jjk-app .form-control:focus,
+.jjk-app .form-select:focus {
+  background-color: rgba(10, 12, 20, 0.88);
+  color: var(--jjk-text);
+  border-color: rgba(124, 58, 237, 0.35);
+  box-shadow: 0 0 0 0.2rem rgba(124, 58, 237, 0.14);
+}
+
+.jjk-app .form-control::placeholder {
+  color: #94a3b8;
+}
+
+.jjk-app .alert-dark {
+  background: rgba(17, 24, 39, 0.92);
+  color: #e2e8f0;
+}
+
+.jjk-app .btn-danger {
+  background: linear-gradient(135deg, #991b1b 0%, #dc2626 100%);
+  border-color: #ef4444;
+}
+
+.jjk-app .btn-danger:hover {
+  background: linear-gradient(135deg, #b91c1c 0%, #ef4444 100%);
+  border-color: #f87171;
+}

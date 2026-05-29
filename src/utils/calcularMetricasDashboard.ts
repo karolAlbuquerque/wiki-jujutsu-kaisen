@@ -1,27 +1,13 @@
-import type { IMetricasDashboard, IPersonagem } from '../interfaces'
+import type { IMetricasDashboard, Personagem } from '../interfaces'
 
-/**
- * Deriva contadores do dashboard a partir do array em estado.
- */
-export function calcularMetricasDashboard(personagens: IPersonagem[]): IMetricasDashboard {
-  const totalFeiticeiros = personagens.length
-  let feiticeirosAtivos = 0
-  let feridos = 0
-  let exorcizados = 0
-  let especiaisOuPrimeiroGrau = 0
-
-  for (const p of personagens) {
-    if (p.status === 'ativo') feiticeirosAtivos += 1
-    if (p.status === 'ferido') feridos += 1
-    if (p.status === 'exorcizado') exorcizados += 1
-    if (p.contaComoEspecialOuPrimeiroGrau) especiaisOuPrimeiroGrau += 1
-  }
+export function calcularMetricasDashboard(personagens: Personagem[]): IMetricasDashboard {
+  const categorias = new Set(personagens.map((personagem) => personagem.categoria))
 
   return {
-    totalFeiticeiros,
-    feiticeirosAtivos,
-    feridos,
-    exorcizados,
-    especiaisOuPrimeiroGrau,
+    totalPersonagens: personagens.length,
+    totalCategorias: categorias.size,
+    grauEspecial: personagens.filter((personagem) => personagem.grau === 'Grau Especial').length,
+    maldicoes: personagens.filter((personagem) => personagem.categoria === 'Maldicao').length,
+    feiticeiros: personagens.filter((personagem) => personagem.categoria === 'Feiticeiro').length,
   }
 }

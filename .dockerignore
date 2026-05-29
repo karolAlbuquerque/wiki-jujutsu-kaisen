@@ -1,0 +1,15 @@
+node_modules
+dist
+build
+target
+.git
+.env
+.env.*
+logs
+*.log
+.vscode
+.idea
+.DS_Store
+tmp
+temp
+backend-java/target

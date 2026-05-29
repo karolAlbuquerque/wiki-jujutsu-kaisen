@@ -1,5 +1,6 @@
 export type { IStatusFeiticeiro } from './IStatusFeiticeiro'
-export type { IPersonagem } from './IPersonagem'
+export type { Personagem } from './Personagem'
+export type { PersonagemFormData } from './PersonagemFormData'
 export type { ITecnicaAmaldicoada } from './ITecnicaAmaldicoada'
 export type { IClã } from './IClã'
 export type { IEpisodio } from './IEpisodio'
