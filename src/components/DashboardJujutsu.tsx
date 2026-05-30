@@ -12,9 +12,7 @@ export function DashboardJujutsu({ metricas }: IDashboardJujutsuProps) {
       <div className="container-fluid px-3 px-lg-4">
         <div className="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-2 mb-3">
           <h2 className="h5 text-uppercase jjk-section-title mb-0 jjk-energia-titulo">Dashboard da wiki</h2>
-          <p className="small text-secondary mb-0 jjk-dashboard-hint">
-            Resumo em tempo real do catalogo conectado ao backend Java e ao PostgreSQL.
-          </p>
+          <p className="small text-secondary mb-0 jjk-dashboard-hint">Resumo dos personagens cadastrados.</p>
         </div>
         <div className="row g-3">
           <div className="col-6 col-md-4 col-xl-2">
@@ -60,9 +58,7 @@ export function DashboardJujutsu({ metricas }: IDashboardJujutsuProps) {
               </span>
               <p className="small text-secondary mb-1">Feiticeiros cadastrados</p>
               <p className="h3 mb-0 jjk-stat-value">{feiticeiros}</p>
-              <p className="small text-muted mb-0 mt-2">
-                O dashboard e recalculado a cada cadastro, edicao ou exclusao.
-              </p>
+              <p className="small text-muted mb-0 mt-2">Atualizado conforme a lista muda.</p>
             </div>
           </div>
         </div>

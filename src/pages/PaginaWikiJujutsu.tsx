@@ -125,7 +125,7 @@ export function PaginaWikiJujutsu() {
     <div className="jjk-app min-vh-100 d-flex flex-column">
       <HeaderJujutsu
         tituloPrincipal="Wiki Jujutsu Kaisen"
-        subtitulo="Catalogo completo de personagens com CRUD em React, Vite, TypeScript, Servlet, JDBC e PostgreSQL."
+        subtitulo="Catalogo de personagens, tecnicas e classificacoes do universo Jujutsu."
       />
 
       <main className="flex-grow-1">
@@ -167,7 +167,7 @@ export function PaginaWikiJujutsu() {
         </div>
       </main>
 
-      <FooterJujutsu textoInstitucional="Aplicacao academica integrada ao backend Java com dados reais de personagens vindo do PostgreSQL." />
+      <FooterJujutsu textoInstitucional="Wiki de personagens de Jujutsu Kaisen." />
     </div>
   )
 }

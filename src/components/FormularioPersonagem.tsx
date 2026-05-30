@@ -61,9 +61,7 @@ export function FormularioPersonagem({
       <div className="d-flex align-items-center justify-content-between gap-2 mb-3">
         <div>
           <h2 className="h6 text-uppercase jjk-aside-title mb-1">{titulo}</h2>
-          <p className="small text-secondary mb-0">
-            Preencha os campos abaixo para manter a wiki conectada ao PostgreSQL.
-          </p>
+          <p className="small text-secondary mb-0">Preencha os dados principais do personagem.</p>
         </div>
         {personagemEmEdicao ? (
           <button type="button" className="btn btn-sm btn-outline-light" onClick={onCancel}>

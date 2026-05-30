@@ -7,7 +7,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
-      - "5432:5432"
+      - "${POSTGRES_PORT:-5433}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
@@ -44,6 +44,8 @@ services:
       - backend
     environment:
       VITE_API_URL: http://localhost:8080/backend-java/api
+    volumes:
+      - ./public:/app/public:ro
     ports:
       - "${FRONTEND_PORT:-5173}:5173"
 
